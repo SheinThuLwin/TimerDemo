@@ -16,6 +16,7 @@
 		978D322D27E991FE00B92CAF /* TimerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978D322C27E991FE00B92CAF /* TimerDemoTests.swift */; };
 		978D323727E991FE00B92CAF /* TimerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978D323627E991FE00B92CAF /* TimerDemoUITests.swift */; };
 		978D323927E991FE00B92CAF /* TimerDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978D323827E991FE00B92CAF /* TimerDemoUITestsLaunchTests.swift */; };
+		978D324627E9C95C00B92CAF /* TimerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978D324527E9C95C00B92CAF /* TimerControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		978D323227E991FE00B92CAF /* TimerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		978D323627E991FE00B92CAF /* TimerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDemoUITests.swift; sourceTree = "<group>"; };
 		978D323827E991FE00B92CAF /* TimerDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		978D324527E9C95C00B92CAF /* TimerControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				978D321527E991F800B92CAF /* AppDelegate.swift */,
 				978D321727E991F800B92CAF /* SceneDelegate.swift */,
 				978D321927E991F800B92CAF /* ViewController.swift */,
+				978D324527E9C95C00B92CAF /* TimerControl.swift */,
 				978D321B27E991F800B92CAF /* Main.storyboard */,
 				978D321E27E991FE00B92CAF /* Assets.xcassets */,
 				978D322027E991FE00B92CAF /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				978D321A27E991F800B92CAF /* ViewController.swift in Sources */,
 				978D321627E991F800B92CAF /* AppDelegate.swift in Sources */,
 				978D321827E991F800B92CAF /* SceneDelegate.swift in Sources */,
+				978D324627E9C95C00B92CAF /* TimerControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,5 +32,18 @@ class TimerDemoTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testTimeString() throws {
+        let vc = TimerControl()
+        
+        XCTAssertEqual(vc.getTimeString(seconds: 0), "00:00")
+        XCTAssertEqual(vc.getTimeString(seconds: 9), "00:09")
+        XCTAssertEqual(vc.getTimeString(seconds: 65), "01:05")
+        XCTAssertEqual(vc.getTimeString(seconds: 664), "11:04")
+        XCTAssertEqual(vc.getTimeString(seconds: 674), "11:14")
+        XCTAssertEqual(vc.getTimeString(seconds: 18674), "05:11:14")
+        XCTAssertEqual(vc.getTimeString(seconds: 36674), "10:11:14")
+        XCTAssertEqual(vc.getTimeString(seconds: 360674), "100:11:14")
+    }
 
 }
