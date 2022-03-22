@@ -25,18 +25,22 @@
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TW-qy-Q7X" userLabel="btnPause">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TW-qy-Q7X" userLabel="btnPause">
                                 <rect key="frame" x="20" y="511" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="wdb-oe-6t9"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Continue"/>
                                 <connections>
                                     <action selector="btnPauseTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eci-KE-8ef"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPL-kz-PPk" userLabel="btnRestart">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPL-kz-PPk" userLabel="btnRestart">
                                 <rect key="frame" x="20" y="550" width="374" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="o1e-k9-fjD"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Start"/>
                                 <connections>
@@ -47,10 +51,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="4TW-qy-Q7X" firstAttribute="top" secondItem="ysQ-V8-78v" secondAttribute="bottom" constant="8" symbolic="YES" id="1Ak-jj-Fh2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nPL-kz-PPk" secondAttribute="trailing" constant="20" id="2MR-vp-4ev"/>
+                            <constraint firstItem="4TW-qy-Q7X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GCL-h8-Efz"/>
                             <constraint firstItem="ysQ-V8-78v" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Vq9-lE-mks"/>
                             <constraint firstItem="ysQ-V8-78v" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WLB-XY-ccS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4TW-qy-Q7X" secondAttribute="trailing" constant="20" id="ZLF-ax-IeX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ysQ-V8-78v" secondAttribute="trailing" constant="20" id="drg-sD-S8V"/>
                             <constraint firstItem="ysQ-V8-78v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nqq-2z-FWt"/>
+                            <constraint firstItem="nPL-kz-PPk" firstAttribute="top" secondItem="4TW-qy-Q7X" secondAttribute="bottom" constant="8" symbolic="YES" id="s34-kK-ScJ"/>
+                            <constraint firstItem="nPL-kz-PPk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vTo-GM-kRE"/>
                         </constraints>
                     </view>
                     <connections>
